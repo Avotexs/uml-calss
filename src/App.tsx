@@ -48,6 +48,15 @@ function App() {
         rect2.attr('body', { stroke: '#C94A46', rx: 2, ry: 2 });
         rect2.attr('label', { text: 'Hi', fill: '#353535' });
 
+        const rect3 = new shapes.standard.Rectangle();
+        rect3.position(50, 65);
+        rect3.resize(180, 50);
+        rect3.addTo(graph);
+        graph.addCell(rect);
+        paper.unfreeze();
+        rect3.attr('body', { stroke: '#C94A46', rx: 2, ry: 2 });
+        rect3.attr('label', { text: 'welcom', fill: '#353535' });
+
 
 
 
