@@ -13,6 +13,8 @@ body {
 .canvas {
     width: 100%;
     height: 100%;
+    
+    
 }
 
 .joint-paper {
@@ -23,4 +25,43 @@ body {
     height: 100%;
     overflow-y: auto;
     border-right: 1px solid #A0A0A0;
+}
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacement entre l'input et le bouton */
+    margin-bottom: 20px; /* Espace entre les contrôles et le canvas */
+}
+
+.controls input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #C94A46;
+    border-radius: 5px;
+    outline: none;
+    width: 200px; /* Largeur de l'input */
+    transition: border-color 0.3s;
+}
+
+.controls input:focus {
+    border-color: #353535;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #C94A46;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #A83834;
+}
+
+.controls button:active {
+    transform: scale(0.95); /* Effet d'appui */
 }
