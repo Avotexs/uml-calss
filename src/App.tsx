@@ -39,6 +39,14 @@ function App() {
         rect.attr('body', { stroke: '#C94A46', rx: 2, ry: 2 });
         rect.attr('label', { text: 'Hello', fill: '#353535' });
         
+        const rect2 = new shapes.standard.Rectangle();
+        rect2.position(50, 25);
+        rect2.resize(180, 50);
+        rect2.addTo(graph);
+        graph.addCell(rect);
+        paper.unfreeze();
+        rect2.attr('body', { stroke: '#C94A46', rx: 2, ry: 2 });
+        rect2.attr('label', { text: 'Hi', fill: '#353535' });
 
 
 
